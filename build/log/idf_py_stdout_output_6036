@@ -1,0 +1,55 @@
+[1/11] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/aws_iot_handler.c.obj
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.c:791:12: warning: 'unsubscribeFromTopic' defined but not used [-Wunused-function]
+  791 | static int unsubscribeFromTopic( MQTTContext_t * pMqttContext )
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.c:722:12: warning: 'disconnectMqttSession' defined but not used [-Wunused-function]
+  722 | static int disconnectMqttSession( MQTTContext_t * pMqttContext )
+      |            ^~~~~~~~~~~~~~~~~~~~~
+[2/11] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D "C:\Users\35192\Desktop\Cypress\Terminal\Cypress Terminal Platform\e9_esp_aws_iot\build\bootloader\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.0_py3.8_env\Scripts\python.exe C:/esp/esp-idf-v5.0.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 "C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/build/bootloader/bootloader.bin""
+Bootloader binary size 0x6710 bytes. 0x8f0 bytes (8%) free.
+[3/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/mqtt_demo_mutual_auth.c.obj
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/mqtt_demo_mutual_auth.c:1703:21: warning: 'processLoopWithTimeout' defined but not used [-Wunused-function]
+ 1703 | static MQTTStatus_t processLoopWithTimeout( MQTTContext_t * pMqttContext,
+      |                     ^~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/mqtt_demo_mutual_auth.c:1655:12: warning: 'waitForPacketAck' defined but not used [-Wunused-function]
+ 1655 | static int waitForPacketAck( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/mqtt_demo_mutual_auth.c:1526:12: warning: 'subscribePublishLoop' defined but not used [-Wunused-function]
+ 1526 | static int subscribePublishLoop( MQTTContext_t * pMqttContext )
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/mqtt_demo_mutual_auth.c:1474:12: warning: 'initializeMqtt' defined but not used [-Wunused-function]
+ 1474 | static int initializeMqtt( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/mqtt_demo_mutual_auth.c:1418:12: warning: 'publishToTopic' defined but not used [-Wunused-function]
+ 1418 | static int publishToTopic( MQTTContext_t * pMqttContext )
+      |            ^~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/mqtt_demo_mutual_auth.c:1375:12: warning: 'unsubscribeFromTopic' defined but not used [-Wunused-function]
+ 1375 | static int unsubscribeFromTopic( MQTTContext_t * pMqttContext )
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/mqtt_demo_mutual_auth.c:1333:12: warning: 'subscribeToTopic' defined but not used [-Wunused-function]
+ 1333 | static int subscribeToTopic( MQTTContext_t * pMqttContext )
+      |            ^~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/mqtt_demo_mutual_auth.c:1311:12: warning: 'disconnectMqttSession' defined but not used [-Wunused-function]
+ 1311 | static int disconnectMqttSession( MQTTContext_t * pMqttContext )
+      |            ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/mqtt_demo_mutual_auth.c:1057:12: warning: 'handleResubscribe' defined but not used [-Wunused-function]
+ 1057 | static int handleResubscribe( MQTTContext_t * pMqttContext )
+      |            ^~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/mqtt_demo_mutual_auth.c:926:12: warning: 'handlePublishResend' defined but not used [-Wunused-function]
+  926 | static int handlePublishResend( MQTTContext_t * pMqttContext )
+      |            ^~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/mqtt_demo_mutual_auth.c:892:13: warning: 'cleanupOutgoingPublishes' defined but not used [-Wunused-function]
+  892 | static void cleanupOutgoingPublishes( void )
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/mqtt_demo_mutual_auth.c:702:12: warning: 'connectToServerWithBackoffRetries' defined but not used [-Wunused-function]
+  702 | static int connectToServerWithBackoffRetries( NetworkContext_t * pNetworkContext,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[4/9] Linking C static library esp-idf\main\libmain.a
+[5/9] Generating ld/sections.ld
+[6/9] Linking CXX executable tls_mutual_auth.elf
+FAILED: tls_mutual_auth.elf 
+cmd.exe /C "cd . && C:\Espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe -mlongcalls -Wno-frame-address  @CMakeFiles\tls_mutual_auth.elf.rsp -o tls_mutual_auth.elf  && cd ."
+c:/espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/bin/ld.exe: esp-idf/main/libmain.a(aws_iot_handler.c.obj):(.literal.processLoopWithTimeout+0xc): undefined reference to `mqttContext'
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.

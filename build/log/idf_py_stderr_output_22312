@@ -1,0 +1,69 @@
+warning: Empty last update token.
+Warning: in CMake variable EXTRA_COMPONENT_DIRS: Path component 'C:/Users/35192/Desktop/Cypress/Terminal/Cypress
+  Terminal Platform/e9_esp_aws_iot/../../libraries/backoffAlgorithm' contains a space separator. It was automatically
+  split into ['C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal',
+  'Platform/e9_esp_aws_iot/../../libraries/backoffAlgorithm']
+Warning: in CMake variable EXTRA_COMPONENT_DIRS: Path component 'C:/Users/35192/Desktop/Cypress/Terminal/Cypress
+  Terminal Platform/e9_esp_aws_iot/../../libraries/coreMQTT' contains a space separator. It was automatically split into
+  ['C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal',  'Platform/e9_esp_aws_iot/../../libraries/coreMQTT']
+Warning: in CMake variable EXTRA_COMPONENT_DIRS: Path component 'C:/Users/35192/Desktop/Cypress/Terminal/Cypress
+  Terminal Platform/e9_esp_aws_iot/../../libraries/common/posix_compat' contains a space separator. It was automatically
+  split into ['C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal',
+  'Platform/e9_esp_aws_iot/../../libraries/common/posix_compat']
+
+Note: In ESP-IDF v5.0 and later, COMPONENT_DIRS and EXTRA_COMPONENT_DIRS should be defined
+      as CMake lists, not as space separated strings.
+
+Examples:
+    * set(EXTRA_COMPONENT_DIRS path/to/components path/to/more/components)
+      # Correct, EXTRA_COMPONENT_DIRS is defined as a CMake list, with two paths added
+
+    * list(APPEND EXTRA_COMPONENT_DIRS path/to/component)
+      list(APPEND EXTRA_COMPONENT_DIRS path/to/more/components)
+      # Correct, use when building EXTRA_COMPONENT_DIRS incrementally
+
+    * set(EXTRA_COMPONENT_DIRS path/to/components "another/path with space/components")
+      # Literal path with spaces has to be quoted
+
+    * set(EXTRA_COMPONENT_DIRS $ENV{MY_PATH}/components dir/more_components)
+      # Correct, even if MY_PATH contains spaces
+
+    * set(EXTRA_COMPONENT_DIRS ${ROOT}/component1 ${ROOT}/component2 ${ROOT}/component3)
+      # Correct, even if ROOT contains spaces
+
+Avoid string concatenation!
+    set(EXTRA_COMPONENT_DIRS "${EXTRA_COMPONENT_DIRS} component1")
+    set(EXTRA_COMPONENT_DIRS "${EXTRA_COMPONENT_DIRS} component2")
+    # Incorrect. String "component1 component2" may indicate a single directory
+    # name with a space, or two directory names separated by space.
+
+Instead use:
+    list(APPEND component1)
+    list(APPEND component2)
+
+Defining COMPONENT_DIRS and EXTRA_COMPONENT_DIRS as CMake lists is backwards compatible
+with ESP-IDF 4.4 and below.
+
+(If you think these variables are defined correctly in your project and this message
+is not relevant, please report this as an issue.)
+
+Diagnostic info: C:/esp/esp-idf-v5.0.1/tools/split_paths_by_spaces.py was invoked in C:\Users\35192\Desktop\Cypress\Terminal\Cypress Terminal Platform\e9_esp_aws_iot with arguments: ['--var-name=EXTRA_COMPONENT_DIRS', 'C:/esp/esp-idf-v5.0.1//examples/common_components/protocol_examples_common;C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/../../libraries/backoffAlgorithm;C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/../../libraries/coreMQTT;C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/../../libraries/common/posix_compat']
+CMake Error at C:/esp/esp-idf-v5.0.1/tools/cmake/component.cmake:484 (add_library):
+  Cannot find source file:
+
+    C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/constants.c
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+  .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+Call Stack (most recent call first):
+  main/CMakeLists.txt:29 (idf_component_register)
+
+
+CMake Error at C:/esp/esp-idf-v5.0.1/tools/cmake/component.cmake:484 (add_library):
+  No SOURCES given to target: __idf_main
+Call Stack (most recent call first):
+  main/CMakeLists.txt:29 (idf_component_register)
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.
+ninja: error: rebuilding 'build.ninja': subcommand failed

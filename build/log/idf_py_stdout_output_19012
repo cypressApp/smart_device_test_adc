@@ -1,0 +1,995 @@
+[1/27] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D "C:\Users\35192\Desktop\Cypress\Terminal\Cypress Terminal Platform\e9_esp_aws_iot\build\bootloader\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.0_py3.8_env\Scripts\python.exe C:/esp/esp-idf-v5.0.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 "C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/build/bootloader/bootloader.bin""
+Bootloader binary size 0x6710 bytes. 0x8f0 bytes (8%) free.
+[2/25] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/mqtt_demo_mutual_auth.c.obj
+[3/25] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/memory_handler/flash_wifi_info_handler.c.obj
+In file included from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/context.h:42,
+                 from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/memory_handler/flash_wifi_info_handler.c:1:
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:105:17: warning: 'generateRandomNumber' declared 'static' but never defined [-Wunused-function]
+  105 | static uint32_t generateRandomNumber();
+      |                 ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:106:12: warning: 'connectToServerWithBackoffRetries' declared 'static' but never defined [-Wunused-function]
+  106 | static int connectToServerWithBackoffRetries( NetworkContext_t * pNetworkContext,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:110:12: warning: 'subscribePublishLoop' declared 'static' but never defined [-Wunused-function]
+  110 | static int subscribePublishLoop( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:111:13: warning: 'handleIncomingPublish' declared 'static' but never defined [-Wunused-function]
+  111 | static void handleIncomingPublish( MQTTPublishInfo_t * pPublishInfo,
+      |             ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:113:13: warning: 'eventCallback' declared 'static' but never defined [-Wunused-function]
+  113 | static void eventCallback( MQTTContext_t * pMqttContext,
+      |             ^~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:116:12: warning: 'initializeMqtt' declared 'static' but never defined [-Wunused-function]
+  116 | static int initializeMqtt( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:118:12: warning: 'establishMqttSession' declared 'static' but never defined [-Wunused-function]
+  118 | static int establishMqttSession( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:121:12: warning: 'disconnectMqttSession' declared 'static' but never defined [-Wunused-function]
+  121 | static int disconnectMqttSession( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:122:12: warning: 'subscribeToTopic' declared 'static' but never defined [-Wunused-function]
+  122 | static int subscribeToTopic( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:123:12: warning: 'unsubscribeFromTopic' declared 'static' but never defined [-Wunused-function]
+  123 | static int unsubscribeFromTopic( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:124:12: warning: 'publishToTopic' declared 'static' but never defined [-Wunused-function]
+  124 | static int publishToTopic( MQTTContext_t * pMqttContext , char *msg_topic  , char *message );
+      |            ^~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:125:12: warning: 'getNextFreeIndexForOutgoingPublishes' declared 'static' but never defined [-Wunused-function]
+  125 | static int getNextFreeIndexForOutgoingPublishes( uint8_t * pIndex );
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:126:13: warning: 'cleanupOutgoingPublishAt' declared 'static' but never defined [-Wunused-function]
+  126 | static void cleanupOutgoingPublishAt( uint8_t index );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:127:13: warning: 'cleanupOutgoingPublishes' declared 'static' but never defined [-Wunused-function]
+  127 | static void cleanupOutgoingPublishes( void );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:128:13: warning: 'cleanupOutgoingPublishWithPacketID' declared 'static' but never defined [-Wunused-function]
+  128 | static void cleanupOutgoingPublishWithPacketID( uint16_t packetId );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:129:12: warning: 'handlePublishResend' declared 'static' but never defined [-Wunused-function]
+  129 | static int handlePublishResend( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:130:13: warning: 'updateSubAckStatus' declared 'static' but never defined [-Wunused-function]
+  130 | static void updateSubAckStatus( MQTTPacketInfo_t * pPacketInfo );
+      |             ^~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:131:12: warning: 'waitForPacketAck' declared 'static' but never defined [-Wunused-function]
+  131 | static int waitForPacketAck( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:134:21: warning: 'processLoopWithTimeout' declared 'static' but never defined [-Wunused-function]
+  134 | static MQTTStatus_t processLoopWithTimeout( MQTTContext_t * pMqttContext,
+      |                     ^~~~~~~~~~~~~~~~~~~~~~
+[4/25] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj
+In file included from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/context.h:42,
+                 from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/app_main.c:23:
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:105:17: warning: 'generateRandomNumber' declared 'static' but never defined [-Wunused-function]
+  105 | static uint32_t generateRandomNumber();
+      |                 ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:106:12: warning: 'connectToServerWithBackoffRetries' declared 'static' but never defined [-Wunused-function]
+  106 | static int connectToServerWithBackoffRetries( NetworkContext_t * pNetworkContext,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:110:12: warning: 'subscribePublishLoop' declared 'static' but never defined [-Wunused-function]
+  110 | static int subscribePublishLoop( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:111:13: warning: 'handleIncomingPublish' declared 'static' but never defined [-Wunused-function]
+  111 | static void handleIncomingPublish( MQTTPublishInfo_t * pPublishInfo,
+      |             ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:113:13: warning: 'eventCallback' declared 'static' but never defined [-Wunused-function]
+  113 | static void eventCallback( MQTTContext_t * pMqttContext,
+      |             ^~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:116:12: warning: 'initializeMqtt' declared 'static' but never defined [-Wunused-function]
+  116 | static int initializeMqtt( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:118:12: warning: 'establishMqttSession' declared 'static' but never defined [-Wunused-function]
+  118 | static int establishMqttSession( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:121:12: warning: 'disconnectMqttSession' declared 'static' but never defined [-Wunused-function]
+  121 | static int disconnectMqttSession( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:122:12: warning: 'subscribeToTopic' declared 'static' but never defined [-Wunused-function]
+  122 | static int subscribeToTopic( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:123:12: warning: 'unsubscribeFromTopic' declared 'static' but never defined [-Wunused-function]
+  123 | static int unsubscribeFromTopic( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:124:12: warning: 'publishToTopic' declared 'static' but never defined [-Wunused-function]
+  124 | static int publishToTopic( MQTTContext_t * pMqttContext , char *msg_topic  , char *message );
+      |            ^~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:125:12: warning: 'getNextFreeIndexForOutgoingPublishes' declared 'static' but never defined [-Wunused-function]
+  125 | static int getNextFreeIndexForOutgoingPublishes( uint8_t * pIndex );
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:126:13: warning: 'cleanupOutgoingPublishAt' declared 'static' but never defined [-Wunused-function]
+  126 | static void cleanupOutgoingPublishAt( uint8_t index );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:127:13: warning: 'cleanupOutgoingPublishes' declared 'static' but never defined [-Wunused-function]
+  127 | static void cleanupOutgoingPublishes( void );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:128:13: warning: 'cleanupOutgoingPublishWithPacketID' declared 'static' but never defined [-Wunused-function]
+  128 | static void cleanupOutgoingPublishWithPacketID( uint16_t packetId );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:129:12: warning: 'handlePublishResend' declared 'static' but never defined [-Wunused-function]
+  129 | static int handlePublishResend( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:130:13: warning: 'updateSubAckStatus' declared 'static' but never defined [-Wunused-function]
+  130 | static void updateSubAckStatus( MQTTPacketInfo_t * pPacketInfo );
+      |             ^~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:131:12: warning: 'waitForPacketAck' declared 'static' but never defined [-Wunused-function]
+  131 | static int waitForPacketAck( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:134:21: warning: 'processLoopWithTimeout' declared 'static' but never defined [-Wunused-function]
+  134 | static MQTTStatus_t processLoopWithTimeout( MQTTContext_t * pMqttContext,
+      |                     ^~~~~~~~~~~~~~~~~~~~~~
+[5/25] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ota_lib/tcp_ota_handler.c.obj
+In file included from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/context.h:42,
+                 from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/ota_lib/tcp_ota_handler.c:1:
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:105:17: warning: 'generateRandomNumber' declared 'static' but never defined [-Wunused-function]
+  105 | static uint32_t generateRandomNumber();
+      |                 ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:106:12: warning: 'connectToServerWithBackoffRetries' declared 'static' but never defined [-Wunused-function]
+  106 | static int connectToServerWithBackoffRetries( NetworkContext_t * pNetworkContext,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:110:12: warning: 'subscribePublishLoop' declared 'static' but never defined [-Wunused-function]
+  110 | static int subscribePublishLoop( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:111:13: warning: 'handleIncomingPublish' declared 'static' but never defined [-Wunused-function]
+  111 | static void handleIncomingPublish( MQTTPublishInfo_t * pPublishInfo,
+      |             ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:113:13: warning: 'eventCallback' declared 'static' but never defined [-Wunused-function]
+  113 | static void eventCallback( MQTTContext_t * pMqttContext,
+      |             ^~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:116:12: warning: 'initializeMqtt' declared 'static' but never defined [-Wunused-function]
+  116 | static int initializeMqtt( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:118:12: warning: 'establishMqttSession' declared 'static' but never defined [-Wunused-function]
+  118 | static int establishMqttSession( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:121:12: warning: 'disconnectMqttSession' declared 'static' but never defined [-Wunused-function]
+  121 | static int disconnectMqttSession( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:122:12: warning: 'subscribeToTopic' declared 'static' but never defined [-Wunused-function]
+  122 | static int subscribeToTopic( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:123:12: warning: 'unsubscribeFromTopic' declared 'static' but never defined [-Wunused-function]
+  123 | static int unsubscribeFromTopic( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:124:12: warning: 'publishToTopic' declared 'static' but never defined [-Wunused-function]
+  124 | static int publishToTopic( MQTTContext_t * pMqttContext , char *msg_topic  , char *message );
+      |            ^~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:125:12: warning: 'getNextFreeIndexForOutgoingPublishes' declared 'static' but never defined [-Wunused-function]
+  125 | static int getNextFreeIndexForOutgoingPublishes( uint8_t * pIndex );
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:126:13: warning: 'cleanupOutgoingPublishAt' declared 'static' but never defined [-Wunused-function]
+  126 | static void cleanupOutgoingPublishAt( uint8_t index );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:127:13: warning: 'cleanupOutgoingPublishes' declared 'static' but never defined [-Wunused-function]
+  127 | static void cleanupOutgoingPublishes( void );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:128:13: warning: 'cleanupOutgoingPublishWithPacketID' declared 'static' but never defined [-Wunused-function]
+  128 | static void cleanupOutgoingPublishWithPacketID( uint16_t packetId );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:129:12: warning: 'handlePublishResend' declared 'static' but never defined [-Wunused-function]
+  129 | static int handlePublishResend( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:130:13: warning: 'updateSubAckStatus' declared 'static' but never defined [-Wunused-function]
+  130 | static void updateSubAckStatus( MQTTPacketInfo_t * pPacketInfo );
+      |             ^~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:131:12: warning: 'waitForPacketAck' declared 'static' but never defined [-Wunused-function]
+  131 | static int waitForPacketAck( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:134:21: warning: 'processLoopWithTimeout' declared 'static' but never defined [-Wunused-function]
+  134 | static MQTTStatus_t processLoopWithTimeout( MQTTContext_t * pMqttContext,
+      |                     ^~~~~~~~~~~~~~~~~~~~~~
+[6/25] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/constants.c.obj
+[7/25] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/memory_handler/flash_reset_handler.c.obj
+In file included from c:\users\35192\desktop\cypress\terminal\cypress terminal platform\e9_esp_aws_iot\main\context.h:42,
+                 from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/memory_handler/flash_reset_handler.c:1:
+c:\users\35192\desktop\cypress\terminal\cypress terminal platform\e9_esp_aws_iot\main\aws_iot_handler.h:105:17: warning: 'generateRandomNumber' declared 'static' but never defined [-Wunused-function]
+  105 | static uint32_t generateRandomNumber();
+      |                 ^~~~~~~~~~~~~~~~~~~~
+c:\users\35192\desktop\cypress\terminal\cypress terminal platform\e9_esp_aws_iot\main\aws_iot_handler.h:106:12: warning: 'connectToServerWithBackoffRetries' declared 'static' but never defined [-Wunused-function]
+  106 | static int connectToServerWithBackoffRetries( NetworkContext_t * pNetworkContext,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\users\35192\desktop\cypress\terminal\cypress terminal platform\e9_esp_aws_iot\main\aws_iot_handler.h:110:12: warning: 'subscribePublishLoop' declared 'static' but never defined [-Wunused-function]
+  110 | static int subscribePublishLoop( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~
+c:\users\35192\desktop\cypress\terminal\cypress terminal platform\e9_esp_aws_iot\main\aws_iot_handler.h:111:13: warning: 'handleIncomingPublish' declared 'static' but never defined [-Wunused-function]
+  111 | static void handleIncomingPublish( MQTTPublishInfo_t * pPublishInfo,
+      |             ^~~~~~~~~~~~~~~~~~~~~
+c:\users\35192\desktop\cypress\terminal\cypress terminal platform\e9_esp_aws_iot\main\aws_iot_handler.h:113:13: warning: 'eventCallback' declared 'static' but never defined [-Wunused-function]
+  113 | static void eventCallback( MQTTContext_t * pMqttContext,
+      |             ^~~~~~~~~~~~~
+c:\users\35192\desktop\cypress\terminal\cypress terminal platform\e9_esp_aws_iot\main\aws_iot_handler.h:116:12: warning: 'initializeMqtt' declared 'static' but never defined [-Wunused-function]
+  116 | static int initializeMqtt( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~
+c:\users\35192\desktop\cypress\terminal\cypress terminal platform\e9_esp_aws_iot\main\aws_iot_handler.h:118:12: warning: 'establishMqttSession' declared 'static' but never defined [-Wunused-function]
+  118 | static int establishMqttSession( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~~~~~~~
+c:\users\35192\desktop\cypress\terminal\cypress terminal platform\e9_esp_aws_iot\main\aws_iot_handler.h:121:12: warning: 'disconnectMqttSession' declared 'static' but never defined [-Wunused-function]
+  121 | static int disconnectMqttSession( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~~
+c:\users\35192\desktop\cypress\terminal\cypress terminal platform\e9_esp_aws_iot\main\aws_iot_handler.h:122:12: warning: 'subscribeToTopic' declared 'static' but never defined [-Wunused-function]
+  122 | static int subscribeToTopic( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~
+c:\users\35192\desktop\cypress\terminal\cypress terminal platform\e9_esp_aws_iot\main\aws_iot_handler.h:123:12: warning: 'unsubscribeFromTopic' declared 'static' but never defined [-Wunused-function]
+  123 | static int unsubscribeFromTopic( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~
+c:\users\35192\desktop\cypress\terminal\cypress terminal platform\e9_esp_aws_iot\main\aws_iot_handler.h:124:12: warning: 'publishToTopic' declared 'static' but never defined [-Wunused-function]
+  124 | static int publishToTopic( MQTTContext_t * pMqttContext , char *msg_topic  , char *message );
+      |            ^~~~~~~~~~~~~~
+c:\users\35192\desktop\cypress\terminal\cypress terminal platform\e9_esp_aws_iot\main\aws_iot_handler.h:125:12: warning: 'getNextFreeIndexForOutgoingPublishes' declared 'static' but never defined [-Wunused-function]
+  125 | static int getNextFreeIndexForOutgoingPublishes( uint8_t * pIndex );
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\users\35192\desktop\cypress\terminal\cypress terminal platform\e9_esp_aws_iot\main\aws_iot_handler.h:126:13: warning: 'cleanupOutgoingPublishAt' declared 'static' but never defined [-Wunused-function]
+  126 | static void cleanupOutgoingPublishAt( uint8_t index );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+c:\users\35192\desktop\cypress\terminal\cypress terminal platform\e9_esp_aws_iot\main\aws_iot_handler.h:127:13: warning: 'cleanupOutgoingPublishes' declared 'static' but never defined [-Wunused-function]
+  127 | static void cleanupOutgoingPublishes( void );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+c:\users\35192\desktop\cypress\terminal\cypress terminal platform\e9_esp_aws_iot\main\aws_iot_handler.h:128:13: warning: 'cleanupOutgoingPublishWithPacketID' declared 'static' but never defined [-Wunused-function]
+  128 | static void cleanupOutgoingPublishWithPacketID( uint16_t packetId );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\users\35192\desktop\cypress\terminal\cypress terminal platform\e9_esp_aws_iot\main\aws_iot_handler.h:129:12: warning: 'handlePublishResend' declared 'static' but never defined [-Wunused-function]
+  129 | static int handlePublishResend( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~
+c:\users\35192\desktop\cypress\terminal\cypress terminal platform\e9_esp_aws_iot\main\aws_iot_handler.h:130:13: warning: 'updateSubAckStatus' declared 'static' but never defined [-Wunused-function]
+  130 | static void updateSubAckStatus( MQTTPacketInfo_t * pPacketInfo );
+      |             ^~~~~~~~~~~~~~~~~~
+c:\users\35192\desktop\cypress\terminal\cypress terminal platform\e9_esp_aws_iot\main\aws_iot_handler.h:131:12: warning: 'waitForPacketAck' declared 'static' but never defined [-Wunused-function]
+  131 | static int waitForPacketAck( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~~~
+c:\users\35192\desktop\cypress\terminal\cypress terminal platform\e9_esp_aws_iot\main\aws_iot_handler.h:134:21: warning: 'processLoopWithTimeout' declared 'static' but never defined [-Wunused-function]
+  134 | static MQTTStatus_t processLoopWithTimeout( MQTTContext_t * pMqttContext,
+      |                     ^~~~~~~~~~~~~~~~~~~~~~
+[8/25] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/TcpServer.c.obj
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/TcpServer.c: In function 'receiving_tcp_data':
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/TcpServer.c:200:120: warning: passing argument 4 of 'xTaskCreate' makes pointer from integer without a cast [-Wint-conversion]
+  200 |                 xTaskCreate(check_tcp_recv_timeout_task, "check_tcp_recv_timeout", CHECK_TCP_TIMEOUT_TASK_STACK_DEPTH, sock , 5, NULL);
+      |                                                                                                                        ^~~~
+      |                                                                                                                        |
+      |                                                                                                                        int
+In file included from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/context.h:2,
+                 from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/TcpServer.c:1:
+C:/esp/esp-idf-v5.0.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:447:42: note: expected 'void * const' but argument is of type 'int'
+  447 |                             void * const pvParameters,
+      |                             ~~~~~~~~~~~~~^~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/TcpServer.c:231:128: warning: passing argument 4 of 'xTaskCreate' makes pointer from integer without a cast [-Wint-conversion]
+  231 |                         xTaskCreate(check_tcp_recv_timeout_task, "check_tcp_recv_timeout", CHECK_TCP_TIMEOUT_TASK_STACK_DEPTH, sock , 5, NULL);
+      |                                                                                                                                ^~~~
+      |                                                                                                                                |
+      |                                                                                                                                int
+In file included from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/context.h:2,
+                 from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/TcpServer.c:1:
+C:/esp/esp-idf-v5.0.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:447:42: note: expected 'void * const' but argument is of type 'int'
+  447 |                             void * const pvParameters,
+      |                             ~~~~~~~~~~~~~^~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/TcpServer.c: In function 'tcp_server_task':
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/TcpServer.c:323:29: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
+  323 |                 xTaskCreate(receiving_tcp_data, "receiving_tcp_data", TCP_SERVER_TASK_STACK_DEPTH, sock , 5, NULL);
+      |                             ^~~~~~~~~~~~~~~~~~
+      |                             |
+      |                             void (*)(int)
+In file included from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/context.h:2,
+                 from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/TcpServer.c:1:
+C:/esp/esp-idf-v5.0.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:444:44: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (*)(int)'
+  444 |                             TaskFunction_t pvTaskCode,
+      |                             ~~~~~~~~~~~~~~~^~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/TcpServer.c:323:100: warning: passing argument 4 of 'xTaskCreate' makes pointer from integer without a cast [-Wint-conversion]
+  323 |                 xTaskCreate(receiving_tcp_data, "receiving_tcp_data", TCP_SERVER_TASK_STACK_DEPTH, sock , 5, NULL);
+      |                                                                                                    ^~~~
+      |                                                                                                    |
+      |                                                                                                    int
+In file included from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/context.h:2,
+                 from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/TcpServer.c:1:
+C:/esp/esp-idf-v5.0.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:447:42: note: expected 'void * const' but argument is of type 'int'
+  447 |                             void * const pvParameters,
+      |                             ~~~~~~~~~~~~~^~~~~~~~~~~~
+In file included from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/context.h:42,
+                 from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/TcpServer.c:1:
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/TcpServer.c: At top level:
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:105:17: warning: 'generateRandomNumber' declared 'static' but never defined [-Wunused-function]
+  105 | static uint32_t generateRandomNumber();
+      |                 ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:106:12: warning: 'connectToServerWithBackoffRetries' declared 'static' but never defined [-Wunused-function]
+  106 | static int connectToServerWithBackoffRetries( NetworkContext_t * pNetworkContext,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:110:12: warning: 'subscribePublishLoop' declared 'static' but never defined [-Wunused-function]
+  110 | static int subscribePublishLoop( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:111:13: warning: 'handleIncomingPublish' declared 'static' but never defined [-Wunused-function]
+  111 | static void handleIncomingPublish( MQTTPublishInfo_t * pPublishInfo,
+      |             ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:113:13: warning: 'eventCallback' declared 'static' but never defined [-Wunused-function]
+  113 | static void eventCallback( MQTTContext_t * pMqttContext,
+      |             ^~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:116:12: warning: 'initializeMqtt' declared 'static' but never defined [-Wunused-function]
+  116 | static int initializeMqtt( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:118:12: warning: 'establishMqttSession' declared 'static' but never defined [-Wunused-function]
+  118 | static int establishMqttSession( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:121:12: warning: 'disconnectMqttSession' declared 'static' but never defined [-Wunused-function]
+  121 | static int disconnectMqttSession( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:122:12: warning: 'subscribeToTopic' declared 'static' but never defined [-Wunused-function]
+  122 | static int subscribeToTopic( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:123:12: warning: 'unsubscribeFromTopic' declared 'static' but never defined [-Wunused-function]
+  123 | static int unsubscribeFromTopic( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:124:12: warning: 'publishToTopic' declared 'static' but never defined [-Wunused-function]
+  124 | static int publishToTopic( MQTTContext_t * pMqttContext , char *msg_topic  , char *message );
+      |            ^~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:125:12: warning: 'getNextFreeIndexForOutgoingPublishes' declared 'static' but never defined [-Wunused-function]
+  125 | static int getNextFreeIndexForOutgoingPublishes( uint8_t * pIndex );
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:126:13: warning: 'cleanupOutgoingPublishAt' declared 'static' but never defined [-Wunused-function]
+  126 | static void cleanupOutgoingPublishAt( uint8_t index );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:127:13: warning: 'cleanupOutgoingPublishes' declared 'static' but never defined [-Wunused-function]
+  127 | static void cleanupOutgoingPublishes( void );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:128:13: warning: 'cleanupOutgoingPublishWithPacketID' declared 'static' but never defined [-Wunused-function]
+  128 | static void cleanupOutgoingPublishWithPacketID( uint16_t packetId );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:129:12: warning: 'handlePublishResend' declared 'static' but never defined [-Wunused-function]
+  129 | static int handlePublishResend( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:130:13: warning: 'updateSubAckStatus' declared 'static' but never defined [-Wunused-function]
+  130 | static void updateSubAckStatus( MQTTPacketInfo_t * pPacketInfo );
+      |             ^~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:131:12: warning: 'waitForPacketAck' declared 'static' but never defined [-Wunused-function]
+  131 | static int waitForPacketAck( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:134:21: warning: 'processLoopWithTimeout' declared 'static' but never defined [-Wunused-function]
+  134 | static MQTTStatus_t processLoopWithTimeout( MQTTContext_t * pMqttContext,
+      |                     ^~~~~~~~~~~~~~~~~~~~~~
+[9/25] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/StationMode.c.obj
+In file included from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/context.h:42,
+                 from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/StationMode.c:1:
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:105:17: warning: 'generateRandomNumber' declared 'static' but never defined [-Wunused-function]
+  105 | static uint32_t generateRandomNumber();
+      |                 ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:106:12: warning: 'connectToServerWithBackoffRetries' declared 'static' but never defined [-Wunused-function]
+  106 | static int connectToServerWithBackoffRetries( NetworkContext_t * pNetworkContext,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:110:12: warning: 'subscribePublishLoop' declared 'static' but never defined [-Wunused-function]
+  110 | static int subscribePublishLoop( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:111:13: warning: 'handleIncomingPublish' declared 'static' but never defined [-Wunused-function]
+  111 | static void handleIncomingPublish( MQTTPublishInfo_t * pPublishInfo,
+      |             ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:113:13: warning: 'eventCallback' declared 'static' but never defined [-Wunused-function]
+  113 | static void eventCallback( MQTTContext_t * pMqttContext,
+      |             ^~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:116:12: warning: 'initializeMqtt' declared 'static' but never defined [-Wunused-function]
+  116 | static int initializeMqtt( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:118:12: warning: 'establishMqttSession' declared 'static' but never defined [-Wunused-function]
+  118 | static int establishMqttSession( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:121:12: warning: 'disconnectMqttSession' declared 'static' but never defined [-Wunused-function]
+  121 | static int disconnectMqttSession( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:122:12: warning: 'subscribeToTopic' declared 'static' but never defined [-Wunused-function]
+  122 | static int subscribeToTopic( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:123:12: warning: 'unsubscribeFromTopic' declared 'static' but never defined [-Wunused-function]
+  123 | static int unsubscribeFromTopic( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:124:12: warning: 'publishToTopic' declared 'static' but never defined [-Wunused-function]
+  124 | static int publishToTopic( MQTTContext_t * pMqttContext , char *msg_topic  , char *message );
+      |            ^~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:125:12: warning: 'getNextFreeIndexForOutgoingPublishes' declared 'static' but never defined [-Wunused-function]
+  125 | static int getNextFreeIndexForOutgoingPublishes( uint8_t * pIndex );
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:126:13: warning: 'cleanupOutgoingPublishAt' declared 'static' but never defined [-Wunused-function]
+  126 | static void cleanupOutgoingPublishAt( uint8_t index );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:127:13: warning: 'cleanupOutgoingPublishes' declared 'static' but never defined [-Wunused-function]
+  127 | static void cleanupOutgoingPublishes( void );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:128:13: warning: 'cleanupOutgoingPublishWithPacketID' declared 'static' but never defined [-Wunused-function]
+  128 | static void cleanupOutgoingPublishWithPacketID( uint16_t packetId );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:129:12: warning: 'handlePublishResend' declared 'static' but never defined [-Wunused-function]
+  129 | static int handlePublishResend( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:130:13: warning: 'updateSubAckStatus' declared 'static' but never defined [-Wunused-function]
+  130 | static void updateSubAckStatus( MQTTPacketInfo_t * pPacketInfo );
+      |             ^~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:131:12: warning: 'waitForPacketAck' declared 'static' but never defined [-Wunused-function]
+  131 | static int waitForPacketAck( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:134:21: warning: 'processLoopWithTimeout' declared 'static' but never defined [-Wunused-function]
+  134 | static MQTTStatus_t processLoopWithTimeout( MQTTContext_t * pMqttContext,
+      |                     ^~~~~~~~~~~~~~~~~~~~~~
+[10/25] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/AccessPointMode.c.obj
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/AccessPointMode.c: In function 'wifi_event_handler':
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/AccessPointMode.c:8:39: warning: unused variable 'event' [-Wunused-variable]
+    8 |         wifi_event_ap_staconnected_t* event = (wifi_event_ap_staconnected_t*) event_data;
+      |                                       ^~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/AccessPointMode.c:11:42: warning: unused variable 'event' [-Wunused-variable]
+   11 |         wifi_event_ap_stadisconnected_t* event = (wifi_event_ap_stadisconnected_t*) event_data;
+      |                                          ^~~~~
+In file included from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/context.h:42,
+                 from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/AccessPointMode.c:1:
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/AccessPointMode.c: At top level:
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:105:17: warning: 'generateRandomNumber' declared 'static' but never defined [-Wunused-function]
+  105 | static uint32_t generateRandomNumber();
+      |                 ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:106:12: warning: 'connectToServerWithBackoffRetries' declared 'static' but never defined [-Wunused-function]
+  106 | static int connectToServerWithBackoffRetries( NetworkContext_t * pNetworkContext,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:110:12: warning: 'subscribePublishLoop' declared 'static' but never defined [-Wunused-function]
+  110 | static int subscribePublishLoop( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:111:13: warning: 'handleIncomingPublish' declared 'static' but never defined [-Wunused-function]
+  111 | static void handleIncomingPublish( MQTTPublishInfo_t * pPublishInfo,
+      |             ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:113:13: warning: 'eventCallback' declared 'static' but never defined [-Wunused-function]
+  113 | static void eventCallback( MQTTContext_t * pMqttContext,
+      |             ^~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:116:12: warning: 'initializeMqtt' declared 'static' but never defined [-Wunused-function]
+  116 | static int initializeMqtt( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:118:12: warning: 'establishMqttSession' declared 'static' but never defined [-Wunused-function]
+  118 | static int establishMqttSession( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:121:12: warning: 'disconnectMqttSession' declared 'static' but never defined [-Wunused-function]
+  121 | static int disconnectMqttSession( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:122:12: warning: 'subscribeToTopic' declared 'static' but never defined [-Wunused-function]
+  122 | static int subscribeToTopic( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:123:12: warning: 'unsubscribeFromTopic' declared 'static' but never defined [-Wunused-function]
+  123 | static int unsubscribeFromTopic( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:124:12: warning: 'publishToTopic' declared 'static' but never defined [-Wunused-function]
+  124 | static int publishToTopic( MQTTContext_t * pMqttContext , char *msg_topic  , char *message );
+      |            ^~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:125:12: warning: 'getNextFreeIndexForOutgoingPublishes' declared 'static' but never defined [-Wunused-function]
+  125 | static int getNextFreeIndexForOutgoingPublishes( uint8_t * pIndex );
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:126:13: warning: 'cleanupOutgoingPublishAt' declared 'static' but never defined [-Wunused-function]
+  126 | static void cleanupOutgoingPublishAt( uint8_t index );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:127:13: warning: 'cleanupOutgoingPublishes' declared 'static' but never defined [-Wunused-function]
+  127 | static void cleanupOutgoingPublishes( void );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:128:13: warning: 'cleanupOutgoingPublishWithPacketID' declared 'static' but never defined [-Wunused-function]
+  128 | static void cleanupOutgoingPublishWithPacketID( uint16_t packetId );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:129:12: warning: 'handlePublishResend' declared 'static' but never defined [-Wunused-function]
+  129 | static int handlePublishResend( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:130:13: warning: 'updateSubAckStatus' declared 'static' but never defined [-Wunused-function]
+  130 | static void updateSubAckStatus( MQTTPacketInfo_t * pPacketInfo );
+      |             ^~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:131:12: warning: 'waitForPacketAck' declared 'static' but never defined [-Wunused-function]
+  131 | static int waitForPacketAck( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:134:21: warning: 'processLoopWithTimeout' declared 'static' but never defined [-Wunused-function]
+  134 | static MQTTStatus_t processLoopWithTimeout( MQTTContext_t * pMqttContext,
+      |                     ^~~~~~~~~~~~~~~~~~~~~~
+[11/25] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/reset_handler.c.obj
+In file included from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/context.h:42,
+                 from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/reset_handler.c:1:
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:105:17: warning: 'generateRandomNumber' declared 'static' but never defined [-Wunused-function]
+  105 | static uint32_t generateRandomNumber();
+      |                 ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:106:12: warning: 'connectToServerWithBackoffRetries' declared 'static' but never defined [-Wunused-function]
+  106 | static int connectToServerWithBackoffRetries( NetworkContext_t * pNetworkContext,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:110:12: warning: 'subscribePublishLoop' declared 'static' but never defined [-Wunused-function]
+  110 | static int subscribePublishLoop( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:111:13: warning: 'handleIncomingPublish' declared 'static' but never defined [-Wunused-function]
+  111 | static void handleIncomingPublish( MQTTPublishInfo_t * pPublishInfo,
+      |             ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:113:13: warning: 'eventCallback' declared 'static' but never defined [-Wunused-function]
+  113 | static void eventCallback( MQTTContext_t * pMqttContext,
+      |             ^~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:116:12: warning: 'initializeMqtt' declared 'static' but never defined [-Wunused-function]
+  116 | static int initializeMqtt( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:118:12: warning: 'establishMqttSession' declared 'static' but never defined [-Wunused-function]
+  118 | static int establishMqttSession( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:121:12: warning: 'disconnectMqttSession' declared 'static' but never defined [-Wunused-function]
+  121 | static int disconnectMqttSession( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:122:12: warning: 'subscribeToTopic' declared 'static' but never defined [-Wunused-function]
+  122 | static int subscribeToTopic( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:123:12: warning: 'unsubscribeFromTopic' declared 'static' but never defined [-Wunused-function]
+  123 | static int unsubscribeFromTopic( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:124:12: warning: 'publishToTopic' declared 'static' but never defined [-Wunused-function]
+  124 | static int publishToTopic( MQTTContext_t * pMqttContext , char *msg_topic  , char *message );
+      |            ^~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:125:12: warning: 'getNextFreeIndexForOutgoingPublishes' declared 'static' but never defined [-Wunused-function]
+  125 | static int getNextFreeIndexForOutgoingPublishes( uint8_t * pIndex );
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:126:13: warning: 'cleanupOutgoingPublishAt' declared 'static' but never defined [-Wunused-function]
+  126 | static void cleanupOutgoingPublishAt( uint8_t index );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:127:13: warning: 'cleanupOutgoingPublishes' declared 'static' but never defined [-Wunused-function]
+  127 | static void cleanupOutgoingPublishes( void );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:128:13: warning: 'cleanupOutgoingPublishWithPacketID' declared 'static' but never defined [-Wunused-function]
+  128 | static void cleanupOutgoingPublishWithPacketID( uint16_t packetId );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:129:12: warning: 'handlePublishResend' declared 'static' but never defined [-Wunused-function]
+  129 | static int handlePublishResend( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:130:13: warning: 'updateSubAckStatus' declared 'static' but never defined [-Wunused-function]
+  130 | static void updateSubAckStatus( MQTTPacketInfo_t * pPacketInfo );
+      |             ^~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:131:12: warning: 'waitForPacketAck' declared 'static' but never defined [-Wunused-function]
+  131 | static int waitForPacketAck( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:134:21: warning: 'processLoopWithTimeout' declared 'static' but never defined [-Wunused-function]
+  134 | static MQTTStatus_t processLoopWithTimeout( MQTTContext_t * pMqttContext,
+      |                     ^~~~~~~~~~~~~~~~~~~~~~
+[12/25] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/GPIO.c.obj
+In file included from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/context.h:42,
+                 from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/GPIO.c:1:
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:105:17: warning: 'generateRandomNumber' declared 'static' but never defined [-Wunused-function]
+  105 | static uint32_t generateRandomNumber();
+      |                 ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:106:12: warning: 'connectToServerWithBackoffRetries' declared 'static' but never defined [-Wunused-function]
+  106 | static int connectToServerWithBackoffRetries( NetworkContext_t * pNetworkContext,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:110:12: warning: 'subscribePublishLoop' declared 'static' but never defined [-Wunused-function]
+  110 | static int subscribePublishLoop( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:111:13: warning: 'handleIncomingPublish' declared 'static' but never defined [-Wunused-function]
+  111 | static void handleIncomingPublish( MQTTPublishInfo_t * pPublishInfo,
+      |             ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:113:13: warning: 'eventCallback' declared 'static' but never defined [-Wunused-function]
+  113 | static void eventCallback( MQTTContext_t * pMqttContext,
+      |             ^~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:116:12: warning: 'initializeMqtt' declared 'static' but never defined [-Wunused-function]
+  116 | static int initializeMqtt( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:118:12: warning: 'establishMqttSession' declared 'static' but never defined [-Wunused-function]
+  118 | static int establishMqttSession( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:121:12: warning: 'disconnectMqttSession' declared 'static' but never defined [-Wunused-function]
+  121 | static int disconnectMqttSession( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:122:12: warning: 'subscribeToTopic' declared 'static' but never defined [-Wunused-function]
+  122 | static int subscribeToTopic( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:123:12: warning: 'unsubscribeFromTopic' declared 'static' but never defined [-Wunused-function]
+  123 | static int unsubscribeFromTopic( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:124:12: warning: 'publishToTopic' declared 'static' but never defined [-Wunused-function]
+  124 | static int publishToTopic( MQTTContext_t * pMqttContext , char *msg_topic  , char *message );
+      |            ^~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:125:12: warning: 'getNextFreeIndexForOutgoingPublishes' declared 'static' but never defined [-Wunused-function]
+  125 | static int getNextFreeIndexForOutgoingPublishes( uint8_t * pIndex );
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:126:13: warning: 'cleanupOutgoingPublishAt' declared 'static' but never defined [-Wunused-function]
+  126 | static void cleanupOutgoingPublishAt( uint8_t index );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:127:13: warning: 'cleanupOutgoingPublishes' declared 'static' but never defined [-Wunused-function]
+  127 | static void cleanupOutgoingPublishes( void );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:128:13: warning: 'cleanupOutgoingPublishWithPacketID' declared 'static' but never defined [-Wunused-function]
+  128 | static void cleanupOutgoingPublishWithPacketID( uint16_t packetId );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:129:12: warning: 'handlePublishResend' declared 'static' but never defined [-Wunused-function]
+  129 | static int handlePublishResend( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:130:13: warning: 'updateSubAckStatus' declared 'static' but never defined [-Wunused-function]
+  130 | static void updateSubAckStatus( MQTTPacketInfo_t * pPacketInfo );
+      |             ^~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:131:12: warning: 'waitForPacketAck' declared 'static' but never defined [-Wunused-function]
+  131 | static int waitForPacketAck( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:134:21: warning: 'processLoopWithTimeout' declared 'static' but never defined [-Wunused-function]
+  134 | static MQTTStatus_t processLoopWithTimeout( MQTTContext_t * pMqttContext,
+      |                     ^~~~~~~~~~~~~~~~~~~~~~
+[13/25] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/udp_response_handler.c.obj
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/udp_response_handler.c: In function 'get_device_wifi_info':
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/udp_response_handler.c:62:18: warning: variable 'ip' set but not used [-Wunused-but-set-variable]
+   62 |         uint32_t ip[4] = {0};
+      |                  ^~
+In file included from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/context.h:42,
+                 from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/udp_response_handler.c:1:
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/udp_response_handler.c: At top level:
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:105:17: warning: 'generateRandomNumber' declared 'static' but never defined [-Wunused-function]
+  105 | static uint32_t generateRandomNumber();
+      |                 ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:106:12: warning: 'connectToServerWithBackoffRetries' declared 'static' but never defined [-Wunused-function]
+  106 | static int connectToServerWithBackoffRetries( NetworkContext_t * pNetworkContext,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:110:12: warning: 'subscribePublishLoop' declared 'static' but never defined [-Wunused-function]
+  110 | static int subscribePublishLoop( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:111:13: warning: 'handleIncomingPublish' declared 'static' but never defined [-Wunused-function]
+  111 | static void handleIncomingPublish( MQTTPublishInfo_t * pPublishInfo,
+      |             ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:113:13: warning: 'eventCallback' declared 'static' but never defined [-Wunused-function]
+  113 | static void eventCallback( MQTTContext_t * pMqttContext,
+      |             ^~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:116:12: warning: 'initializeMqtt' declared 'static' but never defined [-Wunused-function]
+  116 | static int initializeMqtt( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:118:12: warning: 'establishMqttSession' declared 'static' but never defined [-Wunused-function]
+  118 | static int establishMqttSession( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:121:12: warning: 'disconnectMqttSession' declared 'static' but never defined [-Wunused-function]
+  121 | static int disconnectMqttSession( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:122:12: warning: 'subscribeToTopic' declared 'static' but never defined [-Wunused-function]
+  122 | static int subscribeToTopic( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:123:12: warning: 'unsubscribeFromTopic' declared 'static' but never defined [-Wunused-function]
+  123 | static int unsubscribeFromTopic( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:124:12: warning: 'publishToTopic' declared 'static' but never defined [-Wunused-function]
+  124 | static int publishToTopic( MQTTContext_t * pMqttContext , char *msg_topic  , char *message );
+      |            ^~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:125:12: warning: 'getNextFreeIndexForOutgoingPublishes' declared 'static' but never defined [-Wunused-function]
+  125 | static int getNextFreeIndexForOutgoingPublishes( uint8_t * pIndex );
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:126:13: warning: 'cleanupOutgoingPublishAt' declared 'static' but never defined [-Wunused-function]
+  126 | static void cleanupOutgoingPublishAt( uint8_t index );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:127:13: warning: 'cleanupOutgoingPublishes' declared 'static' but never defined [-Wunused-function]
+  127 | static void cleanupOutgoingPublishes( void );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:128:13: warning: 'cleanupOutgoingPublishWithPacketID' declared 'static' but never defined [-Wunused-function]
+  128 | static void cleanupOutgoingPublishWithPacketID( uint16_t packetId );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:129:12: warning: 'handlePublishResend' declared 'static' but never defined [-Wunused-function]
+  129 | static int handlePublishResend( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:130:13: warning: 'updateSubAckStatus' declared 'static' but never defined [-Wunused-function]
+  130 | static void updateSubAckStatus( MQTTPacketInfo_t * pPacketInfo );
+      |             ^~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:131:12: warning: 'waitForPacketAck' declared 'static' but never defined [-Wunused-function]
+  131 | static int waitForPacketAck( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:134:21: warning: 'processLoopWithTimeout' declared 'static' but never defined [-Wunused-function]
+  134 | static MQTTStatus_t processLoopWithTimeout( MQTTContext_t * pMqttContext,
+      |                     ^~~~~~~~~~~~~~~~~~~~~~
+[14/25] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/UdpServer.c.obj
+In file included from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/context.h:42,
+                 from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/UdpServer.c:1:
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:105:17: warning: 'generateRandomNumber' declared 'static' but never defined [-Wunused-function]
+  105 | static uint32_t generateRandomNumber();
+      |                 ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:106:12: warning: 'connectToServerWithBackoffRetries' declared 'static' but never defined [-Wunused-function]
+  106 | static int connectToServerWithBackoffRetries( NetworkContext_t * pNetworkContext,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:110:12: warning: 'subscribePublishLoop' declared 'static' but never defined [-Wunused-function]
+  110 | static int subscribePublishLoop( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:111:13: warning: 'handleIncomingPublish' declared 'static' but never defined [-Wunused-function]
+  111 | static void handleIncomingPublish( MQTTPublishInfo_t * pPublishInfo,
+      |             ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:113:13: warning: 'eventCallback' declared 'static' but never defined [-Wunused-function]
+  113 | static void eventCallback( MQTTContext_t * pMqttContext,
+      |             ^~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:116:12: warning: 'initializeMqtt' declared 'static' but never defined [-Wunused-function]
+  116 | static int initializeMqtt( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:118:12: warning: 'establishMqttSession' declared 'static' but never defined [-Wunused-function]
+  118 | static int establishMqttSession( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:121:12: warning: 'disconnectMqttSession' declared 'static' but never defined [-Wunused-function]
+  121 | static int disconnectMqttSession( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:122:12: warning: 'subscribeToTopic' declared 'static' but never defined [-Wunused-function]
+  122 | static int subscribeToTopic( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:123:12: warning: 'unsubscribeFromTopic' declared 'static' but never defined [-Wunused-function]
+  123 | static int unsubscribeFromTopic( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:124:12: warning: 'publishToTopic' declared 'static' but never defined [-Wunused-function]
+  124 | static int publishToTopic( MQTTContext_t * pMqttContext , char *msg_topic  , char *message );
+      |            ^~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:125:12: warning: 'getNextFreeIndexForOutgoingPublishes' declared 'static' but never defined [-Wunused-function]
+  125 | static int getNextFreeIndexForOutgoingPublishes( uint8_t * pIndex );
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:126:13: warning: 'cleanupOutgoingPublishAt' declared 'static' but never defined [-Wunused-function]
+  126 | static void cleanupOutgoingPublishAt( uint8_t index );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:127:13: warning: 'cleanupOutgoingPublishes' declared 'static' but never defined [-Wunused-function]
+  127 | static void cleanupOutgoingPublishes( void );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:128:13: warning: 'cleanupOutgoingPublishWithPacketID' declared 'static' but never defined [-Wunused-function]
+  128 | static void cleanupOutgoingPublishWithPacketID( uint16_t packetId );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:129:12: warning: 'handlePublishResend' declared 'static' but never defined [-Wunused-function]
+  129 | static int handlePublishResend( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:130:13: warning: 'updateSubAckStatus' declared 'static' but never defined [-Wunused-function]
+  130 | static void updateSubAckStatus( MQTTPacketInfo_t * pPacketInfo );
+      |             ^~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:131:12: warning: 'waitForPacketAck' declared 'static' but never defined [-Wunused-function]
+  131 | static int waitForPacketAck( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:134:21: warning: 'processLoopWithTimeout' declared 'static' but never defined [-Wunused-function]
+  134 | static MQTTStatus_t processLoopWithTimeout( MQTTContext_t * pMqttContext,
+      |                     ^~~~~~~~~~~~~~~~~~~~~~
+[15/25] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/wifi_info_handler.c.obj
+In file included from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/context.h:42,
+                 from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/wifi_info_handler.c:1:
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:105:17: warning: 'generateRandomNumber' declared 'static' but never defined [-Wunused-function]
+  105 | static uint32_t generateRandomNumber();
+      |                 ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:106:12: warning: 'connectToServerWithBackoffRetries' declared 'static' but never defined [-Wunused-function]
+  106 | static int connectToServerWithBackoffRetries( NetworkContext_t * pNetworkContext,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:110:12: warning: 'subscribePublishLoop' declared 'static' but never defined [-Wunused-function]
+  110 | static int subscribePublishLoop( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:111:13: warning: 'handleIncomingPublish' declared 'static' but never defined [-Wunused-function]
+  111 | static void handleIncomingPublish( MQTTPublishInfo_t * pPublishInfo,
+      |             ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:113:13: warning: 'eventCallback' declared 'static' but never defined [-Wunused-function]
+  113 | static void eventCallback( MQTTContext_t * pMqttContext,
+      |             ^~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:116:12: warning: 'initializeMqtt' declared 'static' but never defined [-Wunused-function]
+  116 | static int initializeMqtt( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:118:12: warning: 'establishMqttSession' declared 'static' but never defined [-Wunused-function]
+  118 | static int establishMqttSession( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:121:12: warning: 'disconnectMqttSession' declared 'static' but never defined [-Wunused-function]
+  121 | static int disconnectMqttSession( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:122:12: warning: 'subscribeToTopic' declared 'static' but never defined [-Wunused-function]
+  122 | static int subscribeToTopic( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:123:12: warning: 'unsubscribeFromTopic' declared 'static' but never defined [-Wunused-function]
+  123 | static int unsubscribeFromTopic( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:124:12: warning: 'publishToTopic' declared 'static' but never defined [-Wunused-function]
+  124 | static int publishToTopic( MQTTContext_t * pMqttContext , char *msg_topic  , char *message );
+      |            ^~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:125:12: warning: 'getNextFreeIndexForOutgoingPublishes' declared 'static' but never defined [-Wunused-function]
+  125 | static int getNextFreeIndexForOutgoingPublishes( uint8_t * pIndex );
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:126:13: warning: 'cleanupOutgoingPublishAt' declared 'static' but never defined [-Wunused-function]
+  126 | static void cleanupOutgoingPublishAt( uint8_t index );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:127:13: warning: 'cleanupOutgoingPublishes' declared 'static' but never defined [-Wunused-function]
+  127 | static void cleanupOutgoingPublishes( void );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:128:13: warning: 'cleanupOutgoingPublishWithPacketID' declared 'static' but never defined [-Wunused-function]
+  128 | static void cleanupOutgoingPublishWithPacketID( uint16_t packetId );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:129:12: warning: 'handlePublishResend' declared 'static' but never defined [-Wunused-function]
+  129 | static int handlePublishResend( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:130:13: warning: 'updateSubAckStatus' declared 'static' but never defined [-Wunused-function]
+  130 | static void updateSubAckStatus( MQTTPacketInfo_t * pPacketInfo );
+      |             ^~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:131:12: warning: 'waitForPacketAck' declared 'static' but never defined [-Wunused-function]
+  131 | static int waitForPacketAck( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:134:21: warning: 'processLoopWithTimeout' declared 'static' but never defined [-Wunused-function]
+  134 | static MQTTStatus_t processLoopWithTimeout( MQTTContext_t * pMqttContext,
+      |                     ^~~~~~~~~~~~~~~~~~~~~~
+[16/25] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ota_lib/ota_handler.c.obj
+In file included from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/context.h:42,
+                 from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/ota_lib/ota_handler.c:1:
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:105:17: warning: 'generateRandomNumber' declared 'static' but never defined [-Wunused-function]
+  105 | static uint32_t generateRandomNumber();
+      |                 ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:106:12: warning: 'connectToServerWithBackoffRetries' declared 'static' but never defined [-Wunused-function]
+  106 | static int connectToServerWithBackoffRetries( NetworkContext_t * pNetworkContext,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:110:12: warning: 'subscribePublishLoop' declared 'static' but never defined [-Wunused-function]
+  110 | static int subscribePublishLoop( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:111:13: warning: 'handleIncomingPublish' declared 'static' but never defined [-Wunused-function]
+  111 | static void handleIncomingPublish( MQTTPublishInfo_t * pPublishInfo,
+      |             ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:113:13: warning: 'eventCallback' declared 'static' but never defined [-Wunused-function]
+  113 | static void eventCallback( MQTTContext_t * pMqttContext,
+      |             ^~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:116:12: warning: 'initializeMqtt' declared 'static' but never defined [-Wunused-function]
+  116 | static int initializeMqtt( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:118:12: warning: 'establishMqttSession' declared 'static' but never defined [-Wunused-function]
+  118 | static int establishMqttSession( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:121:12: warning: 'disconnectMqttSession' declared 'static' but never defined [-Wunused-function]
+  121 | static int disconnectMqttSession( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:122:12: warning: 'subscribeToTopic' declared 'static' but never defined [-Wunused-function]
+  122 | static int subscribeToTopic( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:123:12: warning: 'unsubscribeFromTopic' declared 'static' but never defined [-Wunused-function]
+  123 | static int unsubscribeFromTopic( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:124:12: warning: 'publishToTopic' declared 'static' but never defined [-Wunused-function]
+  124 | static int publishToTopic( MQTTContext_t * pMqttContext , char *msg_topic  , char *message );
+      |            ^~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:125:12: warning: 'getNextFreeIndexForOutgoingPublishes' declared 'static' but never defined [-Wunused-function]
+  125 | static int getNextFreeIndexForOutgoingPublishes( uint8_t * pIndex );
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:126:13: warning: 'cleanupOutgoingPublishAt' declared 'static' but never defined [-Wunused-function]
+  126 | static void cleanupOutgoingPublishAt( uint8_t index );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:127:13: warning: 'cleanupOutgoingPublishes' declared 'static' but never defined [-Wunused-function]
+  127 | static void cleanupOutgoingPublishes( void );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:128:13: warning: 'cleanupOutgoingPublishWithPacketID' declared 'static' but never defined [-Wunused-function]
+  128 | static void cleanupOutgoingPublishWithPacketID( uint16_t packetId );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:129:12: warning: 'handlePublishResend' declared 'static' but never defined [-Wunused-function]
+  129 | static int handlePublishResend( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:130:13: warning: 'updateSubAckStatus' declared 'static' but never defined [-Wunused-function]
+  130 | static void updateSubAckStatus( MQTTPacketInfo_t * pPacketInfo );
+      |             ^~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:131:12: warning: 'waitForPacketAck' declared 'static' but never defined [-Wunused-function]
+  131 | static int waitForPacketAck( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:134:21: warning: 'processLoopWithTimeout' declared 'static' but never defined [-Wunused-function]
+  134 | static MQTTStatus_t processLoopWithTimeout( MQTTContext_t * pMqttContext,
+      |                     ^~~~~~~~~~~~~~~~~~~~~~
+[17/25] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/aws_iot_handler.c.obj
+In file included from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/context.h:42,
+                 from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.c:1:
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:110:12: warning: 'subscribePublishLoop' declared 'static' but never defined [-Wunused-function]
+  110 | static int subscribePublishLoop( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.c:756:12: warning: 'unsubscribeFromTopic' defined but not used [-Wunused-function]
+  756 | static int unsubscribeFromTopic( MQTTContext_t * pMqttContext )
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.c:693:12: warning: 'disconnectMqttSession' defined but not used [-Wunused-function]
+  693 | static int disconnectMqttSession( MQTTContext_t * pMqttContext )
+      |            ^~~~~~~~~~~~~~~~~~~~~
+[18/25] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ota_lib/flash_boot_handler.c.obj
+In file included from c:\users\35192\desktop\cypress\terminal\cypress terminal platform\e9_esp_aws_iot\main\context.h:42,
+                 from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/ota_lib/flash_boot_handler.c:1:
+c:\users\35192\desktop\cypress\terminal\cypress terminal platform\e9_esp_aws_iot\main\aws_iot_handler.h:105:17: warning: 'generateRandomNumber' declared 'static' but never defined [-Wunused-function]
+  105 | static uint32_t generateRandomNumber();
+      |                 ^~~~~~~~~~~~~~~~~~~~
+c:\users\35192\desktop\cypress\terminal\cypress terminal platform\e9_esp_aws_iot\main\aws_iot_handler.h:106:12: warning: 'connectToServerWithBackoffRetries' declared 'static' but never defined [-Wunused-function]
+  106 | static int connectToServerWithBackoffRetries( NetworkContext_t * pNetworkContext,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\users\35192\desktop\cypress\terminal\cypress terminal platform\e9_esp_aws_iot\main\aws_iot_handler.h:110:12: warning: 'subscribePublishLoop' declared 'static' but never defined [-Wunused-function]
+  110 | static int subscribePublishLoop( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~
+c:\users\35192\desktop\cypress\terminal\cypress terminal platform\e9_esp_aws_iot\main\aws_iot_handler.h:111:13: warning: 'handleIncomingPublish' declared 'static' but never defined [-Wunused-function]
+  111 | static void handleIncomingPublish( MQTTPublishInfo_t * pPublishInfo,
+      |             ^~~~~~~~~~~~~~~~~~~~~
+c:\users\35192\desktop\cypress\terminal\cypress terminal platform\e9_esp_aws_iot\main\aws_iot_handler.h:113:13: warning: 'eventCallback' declared 'static' but never defined [-Wunused-function]
+  113 | static void eventCallback( MQTTContext_t * pMqttContext,
+      |             ^~~~~~~~~~~~~
+c:\users\35192\desktop\cypress\terminal\cypress terminal platform\e9_esp_aws_iot\main\aws_iot_handler.h:116:12: warning: 'initializeMqtt' declared 'static' but never defined [-Wunused-function]
+  116 | static int initializeMqtt( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~
+c:\users\35192\desktop\cypress\terminal\cypress terminal platform\e9_esp_aws_iot\main\aws_iot_handler.h:118:12: warning: 'establishMqttSession' declared 'static' but never defined [-Wunused-function]
+  118 | static int establishMqttSession( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~~~~~~~
+c:\users\35192\desktop\cypress\terminal\cypress terminal platform\e9_esp_aws_iot\main\aws_iot_handler.h:121:12: warning: 'disconnectMqttSession' declared 'static' but never defined [-Wunused-function]
+  121 | static int disconnectMqttSession( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~~
+c:\users\35192\desktop\cypress\terminal\cypress terminal platform\e9_esp_aws_iot\main\aws_iot_handler.h:122:12: warning: 'subscribeToTopic' declared 'static' but never defined [-Wunused-function]
+  122 | static int subscribeToTopic( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~
+c:\users\35192\desktop\cypress\terminal\cypress terminal platform\e9_esp_aws_iot\main\aws_iot_handler.h:123:12: warning: 'unsubscribeFromTopic' declared 'static' but never defined [-Wunused-function]
+  123 | static int unsubscribeFromTopic( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~
+c:\users\35192\desktop\cypress\terminal\cypress terminal platform\e9_esp_aws_iot\main\aws_iot_handler.h:124:12: warning: 'publishToTopic' declared 'static' but never defined [-Wunused-function]
+  124 | static int publishToTopic( MQTTContext_t * pMqttContext , char *msg_topic  , char *message );
+      |            ^~~~~~~~~~~~~~
+c:\users\35192\desktop\cypress\terminal\cypress terminal platform\e9_esp_aws_iot\main\aws_iot_handler.h:125:12: warning: 'getNextFreeIndexForOutgoingPublishes' declared 'static' but never defined [-Wunused-function]
+  125 | static int getNextFreeIndexForOutgoingPublishes( uint8_t * pIndex );
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\users\35192\desktop\cypress\terminal\cypress terminal platform\e9_esp_aws_iot\main\aws_iot_handler.h:126:13: warning: 'cleanupOutgoingPublishAt' declared 'static' but never defined [-Wunused-function]
+  126 | static void cleanupOutgoingPublishAt( uint8_t index );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+c:\users\35192\desktop\cypress\terminal\cypress terminal platform\e9_esp_aws_iot\main\aws_iot_handler.h:127:13: warning: 'cleanupOutgoingPublishes' declared 'static' but never defined [-Wunused-function]
+  127 | static void cleanupOutgoingPublishes( void );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+c:\users\35192\desktop\cypress\terminal\cypress terminal platform\e9_esp_aws_iot\main\aws_iot_handler.h:128:13: warning: 'cleanupOutgoingPublishWithPacketID' declared 'static' but never defined [-Wunused-function]
+  128 | static void cleanupOutgoingPublishWithPacketID( uint16_t packetId );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\users\35192\desktop\cypress\terminal\cypress terminal platform\e9_esp_aws_iot\main\aws_iot_handler.h:129:12: warning: 'handlePublishResend' declared 'static' but never defined [-Wunused-function]
+  129 | static int handlePublishResend( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~
+c:\users\35192\desktop\cypress\terminal\cypress terminal platform\e9_esp_aws_iot\main\aws_iot_handler.h:130:13: warning: 'updateSubAckStatus' declared 'static' but never defined [-Wunused-function]
+  130 | static void updateSubAckStatus( MQTTPacketInfo_t * pPacketInfo );
+      |             ^~~~~~~~~~~~~~~~~~
+c:\users\35192\desktop\cypress\terminal\cypress terminal platform\e9_esp_aws_iot\main\aws_iot_handler.h:131:12: warning: 'waitForPacketAck' declared 'static' but never defined [-Wunused-function]
+  131 | static int waitForPacketAck( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~~~
+c:\users\35192\desktop\cypress\terminal\cypress terminal platform\e9_esp_aws_iot\main\aws_iot_handler.h:134:21: warning: 'processLoopWithTimeout' declared 'static' but never defined [-Wunused-function]
+  134 | static MQTTStatus_t processLoopWithTimeout( MQTTContext_t * pMqttContext,
+      |                     ^~~~~~~~~~~~~~~~~~~~~~
+[19/25] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/checksum_handler.c.obj
+In file included from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/context.h:42,
+                 from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/checksum_handler.c:1:
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:105:17: warning: 'generateRandomNumber' declared 'static' but never defined [-Wunused-function]
+  105 | static uint32_t generateRandomNumber();
+      |                 ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:106:12: warning: 'connectToServerWithBackoffRetries' declared 'static' but never defined [-Wunused-function]
+  106 | static int connectToServerWithBackoffRetries( NetworkContext_t * pNetworkContext,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:110:12: warning: 'subscribePublishLoop' declared 'static' but never defined [-Wunused-function]
+  110 | static int subscribePublishLoop( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:111:13: warning: 'handleIncomingPublish' declared 'static' but never defined [-Wunused-function]
+  111 | static void handleIncomingPublish( MQTTPublishInfo_t * pPublishInfo,
+      |             ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:113:13: warning: 'eventCallback' declared 'static' but never defined [-Wunused-function]
+  113 | static void eventCallback( MQTTContext_t * pMqttContext,
+      |             ^~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:116:12: warning: 'initializeMqtt' declared 'static' but never defined [-Wunused-function]
+  116 | static int initializeMqtt( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:118:12: warning: 'establishMqttSession' declared 'static' but never defined [-Wunused-function]
+  118 | static int establishMqttSession( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:121:12: warning: 'disconnectMqttSession' declared 'static' but never defined [-Wunused-function]
+  121 | static int disconnectMqttSession( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:122:12: warning: 'subscribeToTopic' declared 'static' but never defined [-Wunused-function]
+  122 | static int subscribeToTopic( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:123:12: warning: 'unsubscribeFromTopic' declared 'static' but never defined [-Wunused-function]
+  123 | static int unsubscribeFromTopic( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:124:12: warning: 'publishToTopic' declared 'static' but never defined [-Wunused-function]
+  124 | static int publishToTopic( MQTTContext_t * pMqttContext , char *msg_topic  , char *message );
+      |            ^~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:125:12: warning: 'getNextFreeIndexForOutgoingPublishes' declared 'static' but never defined [-Wunused-function]
+  125 | static int getNextFreeIndexForOutgoingPublishes( uint8_t * pIndex );
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:126:13: warning: 'cleanupOutgoingPublishAt' declared 'static' but never defined [-Wunused-function]
+  126 | static void cleanupOutgoingPublishAt( uint8_t index );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:127:13: warning: 'cleanupOutgoingPublishes' declared 'static' but never defined [-Wunused-function]
+  127 | static void cleanupOutgoingPublishes( void );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:128:13: warning: 'cleanupOutgoingPublishWithPacketID' declared 'static' but never defined [-Wunused-function]
+  128 | static void cleanupOutgoingPublishWithPacketID( uint16_t packetId );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:129:12: warning: 'handlePublishResend' declared 'static' but never defined [-Wunused-function]
+  129 | static int handlePublishResend( MQTTContext_t * pMqttContext );
+      |            ^~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:130:13: warning: 'updateSubAckStatus' declared 'static' but never defined [-Wunused-function]
+  130 | static void updateSubAckStatus( MQTTPacketInfo_t * pPacketInfo );
+      |             ^~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:131:12: warning: 'waitForPacketAck' declared 'static' but never defined [-Wunused-function]
+  131 | static int waitForPacketAck( MQTTContext_t * pMqttContext,
+      |            ^~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.h:134:21: warning: 'processLoopWithTimeout' declared 'static' but never defined [-Wunused-function]
+  134 | static MQTTStatus_t processLoopWithTimeout( MQTTContext_t * pMqttContext,
+      |                     ^~~~~~~~~~~~~~~~~~~~~~
+[20/25] Linking C static library esp-idf\main\libmain.a
+[21/25] Generating ld/sections.ld
+[22/25] Linking CXX executable tls_mutual_auth.elf
+[23/25] Generating binary image from built executable
+esptool.py v4.5.1
+Creating esp32 image...
+Merged 25 ELF sections
+Successfully created esp32 image.
+Generated C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/build/tls_mutual_auth.bin
+[24/25] cmd.exe /C "cd /D "C:\Users\35192\Desktop\Cypress\Terminal\Cypress Terminal Platform\e9_esp_aws_iot\build\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.0_py3.8_env\Scripts\python.exe C:/esp/esp-idf-v5.0.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/build/partition_table/partition-table.bin" "C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/build/tls_mutual_auth.bin""
+tls_mutual_auth.bin binary size 0xd4fb0 bytes. Smallest app partition is 0x100000 bytes. 0x2b050 bytes (17%) free.
+[24/25] cmd.exe /C "cd /D C:\esp\esp-idf-v5.0.1\components\esptool_py && C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/esp/esp-idf-v5.0.1 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.0_py3.8_env/Scripts/python.exe;;C:/esp/esp-idf-v5.0.1/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D "WORKING_DIRECTORY=C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/build" -P C:/esp/esp-idf-v5.0.1/components/esptool_py/run_serial_tool.cmake"
+esptool esp32 -p COM3 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 tls_mutual_auth.bin 0x8000 partition_table/partition-table.bin 0xd000 ota_data_initial.bin
+esptool.py v4.5.1
+Serial port COM3
+Connecting......................................
+
+A fatal error occurred: Failed to connect to ESP32: No serial data received.
+For troubleshooting steps visit: https://docs.espressif.com/projects/esptool/en/latest/troubleshooting.html
+FAILED: CMakeFiles/flash C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/build/CMakeFiles/flash 
+cmd.exe /C "cd /D C:\esp\esp-idf-v5.0.1\components\esptool_py && C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/esp/esp-idf-v5.0.1 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.0_py3.8_env/Scripts/python.exe;;C:/esp/esp-idf-v5.0.1/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D "WORKING_DIRECTORY=C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/build" -P C:/esp/esp-idf-v5.0.1/components/esptool_py/run_serial_tool.cmake"
+ninja: build stopped: subcommand failed.

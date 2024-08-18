@@ -1,0 +1,101 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D "C:\Users\35192\Desktop\Cypress\Terminal\Cypress Terminal Platform\e9_esp_aws_iot\build\bootloader\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.0_py3.8_env\Scripts\python.exe C:/esp/esp-idf-v5.0.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 "C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/build/bootloader/bootloader.bin""
+Bootloader binary size 0x6710 bytes. 0x8f0 bytes (8%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/aws_iot_handler.c.obj
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.c: In function 'aws_iot_task':
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.c:1159:22: warning: unused variable 'status' [-Wunused-variable]
+ 1159 |         MQTTStatus_t status = MQTTSuccess;
+      |                      ^~~~~~
+At top level:
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.c:784:12: warning: 'unsubscribeFromTopic' defined but not used [-Wunused-function]
+  784 | static int unsubscribeFromTopic( MQTTContext_t * pMqttContext )
+      |            ^~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.c:715:12: warning: 'disconnectMqttSession' defined but not used [-Wunused-function]
+  715 | static int disconnectMqttSession( MQTTContext_t * pMqttContext )
+      |            ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/main/aws_iot_handler.c:309:12: warning: 'getNextFreeIndexForOutgoingPublishes' defined but not used [-Wunused-function]
+  309 | static int getNextFreeIndexForOutgoingPublishes( uint8_t * pIndex )
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable tls_mutual_auth.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.5.1
+Creating esp32 image...
+Merged 25 ELF sections
+Successfully created esp32 image.
+Generated C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/build/tls_mutual_auth.bin
+[7/8] cmd.exe /C "cd /D "C:\Users\35192\Desktop\Cypress\Terminal\Cypress Terminal Platform\e9_esp_aws_iot\build\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.0_py3.8_env\Scripts\python.exe C:/esp/esp-idf-v5.0.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/build/partition_table/partition-table.bin" "C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/build/tls_mutual_auth.bin""
+tls_mutual_auth.bin binary size 0xd3eb0 bytes. Smallest app partition is 0x100000 bytes. 0x2c150 bytes (17%) free.
+[7/8] cmd.exe /C "cd /D C:\esp\esp-idf-v5.0.1\components\esptool_py && C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/esp/esp-idf-v5.0.1 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.0_py3.8_env/Scripts/python.exe;;C:/esp/esp-idf-v5.0.1/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D "WORKING_DIRECTORY=C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e9_esp_aws_iot/build" -P C:/esp/esp-idf-v5.0.1/components/esptool_py/run_serial_tool.cmake"
+esptool esp32 -p COM3 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 tls_mutual_auth.bin 0x8000 partition_table/partition-table.bin 0xd000 ota_data_initial.bin
+esptool.py v4.5.1
+Serial port COM3
+Connecting....
+Chip is ESP32-D0WDQ6 (revision v1.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 94:b5:55:24:22:6c
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000e3fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x0000d000 to 0x0000efff...
+Compressed 26384 bytes to 16454...
+Writing at 0x00001000... (50 %)
+Writing at 0x000076ad... (100 %)
+Wrote 26384 bytes (16454 compressed) at 0x00001000 in 0.9 seconds (effective 240.0 kbit/s)...
+Hash of data verified.
+Compressed 868016 bytes to 554134...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001afcf... (5 %)
+Writing at 0x000267bc... (8 %)
+Writing at 0x0002bcb2... (11 %)
+Writing at 0x00032ee2... (14 %)
+Writing at 0x0003d500... (17 %)
+Writing at 0x0004349d... (20 %)
+Writing at 0x00048f18... (23 %)
+Writing at 0x0004e955... (26 %)
+Writing at 0x00054305... (29 %)
+Writing at 0x00059b54... (32 %)
+Writing at 0x0005f36b... (35 %)
+Writing at 0x00064aa5... (38 %)
+Writing at 0x0006a48e... (41 %)
+Writing at 0x0006ff56... (44 %)
+Writing at 0x0007560c... (47 %)
+Writing at 0x0007bbf9... (50 %)
+Writing at 0x000816c7... (52 %)
+Writing at 0x000873f7... (55 %)
+Writing at 0x0008c922... (58 %)
+Writing at 0x00091ac9... (61 %)
+Writing at 0x00096f58... (64 %)
+Writing at 0x0009c2ff... (67 %)
+Writing at 0x000a1924... (70 %)
+Writing at 0x000a71a6... (73 %)
+Writing at 0x000acc47... (76 %)
+Writing at 0x000b2334... (79 %)
+Writing at 0x000b7e88... (82 %)
+Writing at 0x000bd9c2... (85 %)
+Writing at 0x000c3df1... (88 %)
+Writing at 0x000ce432... (91 %)
+Writing at 0x000d45ab... (94 %)
+Writing at 0x000d9f1b... (97 %)
+Writing at 0x000df643... (100 %)
+Wrote 868016 bytes (554134 compressed) at 0x00010000 in 12.7 seconds (effective 548.2 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 259...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (259 compressed) at 0x00008000 in 0.1 seconds (effective 299.7 kbit/s)...
+Hash of data verified.
+Compressed 8192 bytes to 31...
+Writing at 0x0000d000... (100 %)
+Wrote 8192 bytes (31 compressed) at 0x0000d000 in 0.1 seconds (effective 446.0 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
